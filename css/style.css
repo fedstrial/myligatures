@@ -1,0 +1,80 @@
+/* Tokyo Night bootstrap theme override */
+
+:root {
+    /* Tokyo Night Colors */
+    --bs-primary:   #7AA2F7;  /* Bright blue */
+    --bs-secondary: #BB9AF7;  /* Purple */
+    --bs-success:   #9ECE6A;  /* Green */
+    --bs-info:      #7DCFFF;  /* Cyan */
+    --bs-warning:   #E0AF68;  /* Yellow/Gold */
+    --bs-danger:    #F7768E;  /* Pink/Red */
+    --bs-light:     #A9B1D6;  /* Light text background */
+    --bs-dark:      #414868;  /* Dark blue-gray */
+    --bs-bg-dark:   #262a3d;  /* Slightly Lighter Background */
+
+    /* Background and text */
+    --bs-body-bg:    #1A1B26; /* Dark Tokyo Night background */
+    --bs-body-color: #A9B1D6; /* Default text color */
+
+    /* Borders */
+    --bs-border-color: #414868; 
+
+    /* Component specific overrides */
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-link-color: var(--bs-primary);
+    --bs-link-hover-color: var(--bs-info);
+}
+
+.text-success {
+    color: var(--bs-success) !important;
+}
+
+.text-yellow {
+    color: var(--bs-warning) !important;
+}
+
+#fira-code {
+    font-family: "Fira Code";
+}
+
+#cascadia-code {
+    font-family: "Cascadia Code";
+}
+
+#victor-mono {
+    font-family: "Victor Mono";
+}
+
+#iosevka {
+    font-family: "Iosevka Term";
+}
+
+@font-face {
+  font-family: Hasklig;
+  src: url(../assets/fonts/HaskLig/Hasklig-Regular.otf);
+}
+
+#hasklig {
+    font-family: Hasklig;
+}
+
+/* Override bg-dark and text-dark to use your palette */
+.bg-dark {
+    background-color: var(--bs-bg-dark) !important;
+}
+
+/* Reset Bootstrap text margins */
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ul, ol, li,
+figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "JetBrains Mono";
+}
