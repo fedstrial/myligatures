@@ -47,8 +47,13 @@
     font-family: "Victor Mono";
 }
 
+@font-face {
+    font-family: Iosevka;
+    src: url(../assets/fonts/Iosevka/Iosevka-Regular.woff2);
+}
+
 #iosevka {
-    font-family: "Iosevka Term";
+    font-family: Iosevka;
 }
 
 @font-face {
