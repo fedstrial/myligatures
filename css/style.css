@@ -27,6 +27,35 @@
     --bs-link-hover-color: var(--bs-info);
 }
 
+
+.btn-home {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    background-color: var(--bs-warning);
+    color: var(--bs-bg-dark);
+}
+
+.btn-home:hover {
+    background-color: var(--bs-warning);
+    color: var(--bs-bg-dark);
+}
+
+.btn-changelog {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    color: var(--bs-success);
+}
+
+.btn-changelog:hover {
+    color: var(--bs-bg-dark);
+    background-color: var(--bs-success);
+}
+
+
 .text-success {
     color: var(--bs-success) !important;
 }
@@ -64,6 +93,15 @@
 #hasklig {
     font-family: Hasklig;
 }
+
+.row [class='col'] {
+    transition: all 0.2s ease;
+}
+
+#main-container {
+    transition: padding 0.3s ease;
+}
+
 
 /* Override bg-dark and text-dark to use your palette */
 .bg-dark {

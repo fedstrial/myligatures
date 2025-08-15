@@ -1,0 +1,55 @@
+a {
+    color: inherit;
+    font-style: normal;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;;
+}
+
+a:not(.collapsed) .bi-caret-right-fill {
+    display: inline-block; /* needed so transform works */
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+a.collapsed .bi-caret-right-fill {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.collapse-inner {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+}
+
+
+.btn-home {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    color: var(--bs-warning);
+    background-color: #00000000;
+}
+
+.btn-home:hover {
+    background-color: var(--bs-warning);
+    color: var(--bs-bg-dark);
+}
+
+.btn-changelog {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    background-color: var(--bs-success);
+    color: var(--bs-bg-dark);
+}
+
+.btn-changelog:hover {
+    color: var(--bs-bg-dark);
+    background-color: var(--bs-success);
+}
