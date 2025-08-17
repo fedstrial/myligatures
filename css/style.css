@@ -25,6 +25,23 @@
     --bs-btn-border-color: var(--bs-primary);
     --bs-link-color: var(--bs-primary);
     --bs-link-hover-color: var(--bs-info);
+
+    /* Ranking backgrounds */
+    --soft-gold:   #E0CD67;
+    --soft-silver: #DBDBDB;
+    --soft-bronze: #A18666;
+}
+
+.bg-gold {
+    background-color: var(--soft-gold);
+}
+
+.bg-silver {
+    background-color: var(--soft-silver);
+}
+
+.bg-bronze {
+    background-color: var(--soft-bronze);
 }
 
 
@@ -55,6 +72,10 @@
     background-color: var(--bs-success);
 }
 
+
+.text-primary-light {
+    color: var(--bs-body-color);
+}
 
 .text-success {
     color: var(--bs-success) !important;
@@ -94,12 +115,34 @@
     font-family: Hasklig;
 }
 
+@font-face {
+    font-family: Monoid;
+    src: url(../assets/fonts/Monoid/Monoid-Regular.ttf);
+}
+
+#monoid {
+    font-family: Monoid;
+}
+
+#fragment-mono {
+    font-family: "Fragment Mono", monospace;
+}
+
+@font-face {
+    font-family: Lilex;
+    src: url(../assets/fonts/Lilex/Lilex-Regular.ttf);
+}
+
+#lilex {
+    font-family: Lilex;
+}
+
 .row [class='col'] {
     transition: all 0.2s ease;
 }
 
-.col:hover {
-  transform: scale(1.1);
+.animated-col:hover {
+  transform: scale(1.05);
 }
 
 .col {
@@ -110,6 +153,9 @@
     transition: padding 0.3s ease;
 }
 
+#project-source:hover {
+    opacity: 0.5;
+}
 
 /* Override bg-dark and text-dark to use your palette */
 .bg-dark {
