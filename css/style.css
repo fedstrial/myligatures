@@ -72,6 +72,30 @@
     background-color: var(--bs-success);
 }
 
+.btn-changelog:active,
+.btn-changelog:focus,
+.btn-changelog.active,
+.btn-changelog:focus-visible {
+    transform: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: none !important;
+    background-color: var(--bs-success) !important;
+    color: var(--bs-bg-dark) !important;
+}
+
+
+.btn-home:active,
+.btn-home:focus,
+.btn-home.active,
+.btn-home:focus-visible {
+    transform: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: none !important;
+    background-color: var(--bs-warning) !important;
+    color: var(--bs-bg-dark) !important;
+}
 
 .text-primary-light {
     color: var(--bs-body-color);
